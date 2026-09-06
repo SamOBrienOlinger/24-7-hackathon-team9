@@ -24,7 +24,7 @@ A team-built learning website about LGBTQIA+ identities, terminology and history
 
 ## Getting started
 
-Requires a browser and a local HTTP server. Python 3 provides one without installing application packages.
+Requires Git, a browser and a local HTTP server. Python 3 provides one without installing application packages.
 
 ```bash
 git clone https://github.com/SamOBrienOlinger/24-7-hackathon-team9.git
@@ -50,6 +50,15 @@ For a manual review, follow the main user journey, check keyboard navigation and
 Supporting notes: [QUIZ-TESTING.md](QUIZ-TESTING.md) · [TESTING.md](TESTING.md).
 
 ## Credits and reuse
+
+Created by **Ben, Chris, Declan, Jaimie, Kyle and Sam**, Team 9 (LGBTQIA+CI), for the Code Institute July 2024 hackathon. The [team page](about.html) links each contributor's profile.
+
+The original project credits:
+
+- **Code:** [Josh Comeau's CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/), Google Fonts, SweetAlert2 and jQuery.
+- **Media:** Unsplash imagery and [Pexels video](https://www.pexels.com/videos/). Exact asset-creator details should be taken from the original source record where available; these platform credits do not grant reuse permission.
+- **Learning content:** Stonewall's terminology resources.
+- **Production support:** CloudConvert and the volunteer hackathon support team.
 
 Forked from [Declan444/24-7-hackathon-team9](https://github.com/Declan444/24-7-hackathon-team9). Original authorship and contributor credits remain with that project.
 
