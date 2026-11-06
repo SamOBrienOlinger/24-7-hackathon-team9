@@ -4,7 +4,7 @@ A team-built learning website about LGBTQIA+ identities, terminology and history
 
 **HTML · CSS · JavaScript**
 
-[Original team demo](https://declan444.github.io/24-7-hackathon-team9/) · [Getting started](#getting-started) · [Repository guide](#repository-guide) · [Checks](#checks-and-review) · [Credits](#credits-and-reuse)
+[Original team demo](https://declan444.github.io/24-7-hackathon-team9/) · [Getting started](#getting-started) · [Data model](#entity-relationship-diagram) · [Repository guide](#repository-guide) · [Checks](#checks-and-review) · [Credits](#credits-and-reuse)
 
 <img src="assets/documentation/img/site-preview.jpg" alt="AllyIndex website preview" width="880">
 
@@ -21,6 +21,33 @@ A team-built learning website about LGBTQIA+ identities, terminology and history
 3. Return to the learning resources and try another quiz attempt.
 
 > **Project notes:** This is Sam’s fork of the team project. The demo link below opens the original team deployment; it does not automatically publish changes from this fork.
+
+## Entity relationship diagram
+
+The browser quiz draws ten distinct questions per completed run. Each question defines four choices, the ID of the correct choice and, for some questions, an image. The browser stores the first completed score under `highScore`. A higher score appears in the current result. [Question bank and quiz logic](assets/js/app.js)
+
+```mermaid
+erDiagram
+    accTitle: AllyIndex quiz data
+    accDescr: A quiz run draws questions without repeats. Each question has four choices and stores the identifier of the correct one.
+    "Quiz Run" }o..|{ Question : draws
+    Question ||--|{ Choice : offers
+
+    "Quiz Run" {
+        number questionNumber
+        number correctAnswers
+    }
+    Question {
+        string id
+        string prompt
+        string answer
+        path img "Optional"
+    }
+    Choice {
+        string id
+        string content
+    }
+```
 
 ## Getting started
 
