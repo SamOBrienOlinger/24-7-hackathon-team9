@@ -26,28 +26,7 @@ A team-built learning website about LGBTQIA+ identities, terminology and history
 
 The browser quiz draws ten distinct questions per completed run. Each question defines four choices, the ID of the correct choice and, for some questions, an image. The browser stores the first completed score under `highScore`. A higher score appears in the current result. [Question bank and quiz logic](assets/js/app.js)
 
-```mermaid
-erDiagram
-    accTitle: AllyIndex quiz data
-    accDescr: A quiz run draws questions without repeats. Each question has four choices and stores the identifier of the correct one.
-    "Quiz Run" }o..|{ Question : draws
-    Question ||--|{ Choice : offers
-
-    "Quiz Run" {
-        number questionNumber
-        number correctAnswers
-    }
-    Question {
-        string id
-        string prompt
-        string answer
-        path img "Optional"
-    }
-    Choice {
-        string id
-        string content
-    }
-```
+[![A quiz run draws questions without repeats. Each question has four choices and stores the identifier of the correct one.](docs/diagrams/allyindex-quiz-data.svg)](docs/diagrams/allyindex-quiz-data.svg)
 
 ## Getting started
 
